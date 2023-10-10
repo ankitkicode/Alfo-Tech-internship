@@ -1,0 +1,249 @@
+@font-face {
+    font-family: first;
+    src: url(/64a2b5d9985e1e3d896d3f50_Moderat\ Extended\ Medium.otf);
+}
+@font-face {
+    font-family: two;
+    src: url(/64a2b5e92874e4083615a378_Moderat-Extended-Light.woff2);
+}
+@font-face {
+    font-family: three;
+    src: url(/64a2b61692e236b2ede8dc86_NuancesCondensed-Regular.woff2);
+}
+@font-face {
+    font-family: four;
+    src: url(/64a2b624c94179e6492cdbc1_NuancesCondensed-RegularItalic.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(206, 191, 191);
+  font-family: gilroy;
+}
+
+.main {
+  overflow:hidden;
+  background-color: rgb(255, 255, 255);
+}
+header{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    /* background-color: lightblue; */
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+  background-color: rgb(255, 255, 255);
+
+}
+header h1{
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-family: first;
+    letter-spacing: 1px;
+}
+header h1:nth-child(2){
+    font-size: 1.9vw;
+    font-weight: 500;
+    font-family: three;
+}
+
+.page1 {
+  height: 100vh;
+  width: 100%;
+  padding:.1px;
+  /* position: relative; */
+
+}
+.page1 .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.page1 .h1 h1{
+    position: absolute;
+    /* right: 0%; */
+    font-size: 19.2vw;
+    font-weight: 500;
+    font-family: three;
+    letter-spacing: -6px;
+}
+.page1 .cover{
+    position: absolute;
+    top: 0;
+    height: 180vh;
+    width: 100%;
+    /* background-color: rgba(240, 125, 125, 0.781); */
+}
+.cover .img1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /* right: 50% */
+    transform: translate(-50%, 0%);
+    height: 550px;
+    width: 380px;
+    object-fit: cover;
+}
+.cover .img2{
+    position: absolute;
+    top:40%;
+    right: 3%;
+    /* right: 50% */
+    /* transform: translate(-50%, 0%); */
+    height: 550px;
+    width: 380px;
+    object-fit: cover;
+}
+.cover .img3{
+    position: absolute;
+    top:40%;
+    left: 3%;
+    /* right: 50% */
+    /* transform: translate(-50%, 0%); */
+    height: 550px;
+    width: 380px;
+    object-fit: cover;
+}
+.cover .img4{
+    position: absolute;
+    top:90%;
+    /* right: 3%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 550px;
+    width: 380px;
+    object-fit: cover;
+}
+.page2{
+    height: 60vh;
+    width: 100%;
+    padding:.1px;
+    position: relative;
+    /* background-color: #f87a7a; */
+}
+.page2 h2{
+    /* margin-top: 5%; */
+    font-size: 8vw;
+    font-weight: 500;
+    font-family: three;
+    line-height: 7.5vw;
+}
+.page2 h3{
+    /* margin-top: 5%; */
+    font-size: 8vw;
+    font-weight: 500;
+    font-family: four;
+}
+.page3{
+    height: 150vh;
+    width: 100%;
+    padding:40px 0px;
+    position: relative;
+    /* background-color: #f87a7a; */
+}
+.page3 h3{
+    font-size: 2.3vw;
+    font-family: three;
+    font-weight: 500;
+    /* white-space: ; */
+}
+.page3 .scroller{
+    margin-top: 2%;
+  height: 410px;
+  width: 100%;
+  /* background-color: #f87a7a; */
+  white-space:nowrap;
+  overflow-y: hidden;
+  
+}
+.page3 .scroller .img{
+    display: inline-block;
+    height: 100%;
+    width: 300px;
+    overflow: hidden;
+    margin-right: 1%;
+}
+.page3 .scroller .img h2{
+    margin-top: -3px;
+    font-size: 1.1vw;
+    font-weight: 500;
+    font-family:first;
+    /* padding-top: -5px; */
+}
+.page3 .scroller .img img{
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.page3 .scroller .img:hover img{
+scale: 1.3;
+}
+.scroller::-webkit-scrollbar {
+    display: none;
+}
+.page3 .content{
+    height: 400px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 10px;
+}
+.page3 .content .box{
+    padding: 60px 30px;
+    
+    height: 100%;
+    width: 38%;
+    background-color: #fff;
+
+}
+.page3 .content .box h1{
+    padding-bottom: 7px;
+    font-size: 1.5vw;
+    font-family: two;
+
+}
+.page3 .content .box p{
+    font-size: 1.2vw;
+}
+
+.page3 .bottom{
+    height: 15vh;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    padding:20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.page3 .bottom h1{
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: two;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+.page3 .bottom p{
+    font-size: 1.2vw;
+    font-weight: 500;
+    cursor: pointer;
+
+
+}
